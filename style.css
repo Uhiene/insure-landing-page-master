@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.btn{
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 30px;
+    background-color: #fff;
+    color: hsl(256, 26%, 20%);
+    text-decoration: none;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Karla';
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.navbar a{
+    text-decoration: none;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-family: 'DM Serif Display';
+}
+.navbar a:hover{
+    padding: 10px 30px;
+    background-color: hsl(256, 26%, 20%);
+    color:#fff;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60vh;
+    background-color: hsl(256, 26%, 20%);
+    background-image: url(/insure-landing-page-master/images/bg-pattern-intro-left-desktop.svg), url(/insure-landing-page-master/images/bg-pattern-intro-right-desktop.svg);
+    background-position: left center , right top;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 40px 80px;
+}
+aside{
+    width: 50%;
+    padding: 50px;
+}
+.hero-image{
+    width: 40%;
+}
+.hero-image img{
+    width: 400px;
+}
+.description-page{
+    padding: 150px;
+    width: 100%;
+}
+.description{
+    display: flex;
+    justify-content: space-between;
+}
+.description-item{
+    width: 30%;
+    margin-top: 25px;
+}
+.description-item img{
+    width: 60px;
+    margin:30px 0;
+}
+.inquiry{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(/insure-landing-page-master/images/bg-pattern-how-we-work-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    color: #fff;
+    background-color:hsl(256,26%,20%) ;
+    padding: 50px;
+    margin-top: 50px;
+}
+.inquiry h1{
+    width: 40%;
+}
+footer{
+    background-color:hsl(0, 0%, 98%) ;
+    background-image: url(/insure-landing-page-master/images/bg-pattern-footer-desktop.svg);
+    background-repeat: no-repeat;
+    padding: 50px 150px;
+}
+.footer-head{
+    display: flex;
+    justify-content: space-between; 
+}
+.social-links img{
+    margin-right: 10px;
+    cursor: pointer;
+}
+.social-links img:hover{
+    background: hsl(256, 26%, 20%);
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 80%;
+}
+.footer-links h5{
+    color: hsl(273, 4%, 51%);
+    text-transform: uppercase;
+}
+.footer-links p{
+    text-transform: uppercase;
+    color: hsl(270, 9%, 17%);
+    font-size:x-small;
+    font-weight: 700;
+    margin-top: 30px;
+    line-height: 0;
+    cursor: pointer;
+}
+.footer-links p:hover{
+    text-decoration: underline;
+}
+.dropdown-icon{
+    display: none;
+}
+@media screen and (max-width:800px) {
+    *{
+        background-repeat: no-repeat;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+    .btn{
+        border: 1px solid #fff;
+        background-color: hsl(256,26%,20%);
+        color: #fff;
+        padding: 20px 40px;
+    }
+    .btn:hover{
+        background-color: #fff;
+        color: hsl(256, 26%, 20%);
+    }
+    header{
+        padding: 30px 50px;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .navbar{
+        position: absolute;
+        background-image: url(/insure-landing-page-master/images/bg-pattern-mobile-nav.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size:cover;
+        background-color:hsl(270, 9%, 17%) ;
+        width: 100%;
+        height:50%;
+        top: 100px;
+        right: -10px;
+        padding: 30px 0px;
+        line-height: 50px;
+        
+    }
+    .navbar a{
+        color: #fff;
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-right: 0;
+    }
+    .navbar a:hover{
+        border: 1px solid white;
+    }
+    .dropdown-icon{
+        display: flex;
+    }
+    .icon-close {
+        display: none;
+    }
+    .show-links{
+        display: flex;
+    }
+    main{
+        height: auto;
+        flex-direction: column-reverse;
+        padding: 0;
+        background-image: none;
+        justify-content: center;
+    }
+    .hero-image{
+        width: 100%;
+    }
+    .hero-image img{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+        height: 50%;
+        padding: 100px 20px;
+        text-align: center;
+        background-image: url(/insure-landing-page-master/images/bg-pattern-intro-left-mobile.svg);
+    }
+    .description-page{
+        padding: 150px 30px;
+        text-align: center;
+    }
+    .description{
+        display: block;  
+    }
+    .description-item{
+        width: 100%;
+        
+    }
+    .inquiry{
+        display: block;
+        text-align: center;
+        background-image: url(/insure-landing-page-master/images/bg-pattern-how-we-work-mobile.svg);
+        background-size: contain;
+    }
+    .inquiry h1{
+        width: 100%;
+        margin: 50px 0;
+    }
+    footer{
+        background-image: url(/insure-landing-page-master/images/bg-pattern-footer-mobile.svg);
+        text-align: center;
+    }
+    .footer-head{
+        display: block;
+    }
+    .footer-links{
+        display:block;
+        width: 100%;
+    }
+    .social-links{
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+}
